@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     background: #000000;
-    /*position: fixed;
-    z-index: 1;*/
+    position: fixed;
+    z-index: 1;
     height: 100px;
     width: 100%;
 }
@@ -16,7 +16,6 @@
     font-size: 36px;
     line-height: 44px;
     margin-left: 10rem;
-    margin-top: 2rem;
     width: 31rem;
     text-transform: uppercase;
 }

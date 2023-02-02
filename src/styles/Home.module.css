@@ -10,7 +10,7 @@
   }
 
   .home_container {
-    /*height: 900px;*/
+    padding-top: 6rem;
   }
 
   .home_title {
@@ -59,17 +59,20 @@
   }
 
 
-
-
 .social_btn_wrapper {
     margin-top: 2rem;
     margin-left: 10rem;
-   /* position: absolute;
-    bottom: 100px;*/
+    position: absolute;
+    top:45rem;
  
   }
 
-  .Li_In__logo {
-    width: 3.5rem;
-    height: 3rem;
+  .social_logos {
+    width: 37px;
+    height: 32px;
+    padding-right: 10px;
   }
+  .social_logos:hover {
+    cursor: pointer;
+  }
+

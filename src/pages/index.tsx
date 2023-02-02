@@ -2,33 +2,7 @@ import React from 'react'
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import LiInLogo from '../assets/LI-In-Bug.png'
-
-
-interface Data {
-  name: string;
-  
-}
-
-const data: Data[] = [
-  
-  { name: 'React.js'},
-  { name: 'React Native'},
-  { name: 'Vue.js'},
-  { name: 'Javascript'},
-  { name: 'Node.js'},
-  { name: 'Firebase'},
-  { name: 'HTML5'},
-  { name: 'CSS'},
-  { name: 'SASS'},
-  { name: 'GitHub'},
-  { name: 'REST API'},
-  { name: 'Bootstrap'},
-  { name: 'Material UI'},
-  { name: 'Adobe Experience Manager'},
-  { name: 'Wordpress'},
-
-]
-
+import GitHLogo from '../assets/github-mark.png'
 
 const index = () => {
   return (
@@ -39,8 +13,10 @@ const index = () => {
         <button className={styles.purple_btn}>MY PORTFOLIO</button>
       </div>
       <div className={styles.social_btn_wrapper}>
-        <Image src={LiInLogo} alt="Linkedin Logo" className={styles.Li_In__logo } />
+        <Image src={LiInLogo} alt="Linkedin Logo" className={styles.social_logos} />
+        <Image src={GitHLogo} alt="Github Logo" className={styles.social_logos} />
       </div>
+      <hr></hr>
       <div className={styles.section_techstack}>
         <h1>TECH STACK</h1>
         <p className={styles.tech_stack_title}>Programming languages / Framesworks / Libraries / CMS</p>
@@ -51,7 +27,6 @@ const index = () => {
         </tr>
       </thead>
       <tbody>
-
           <tr>
             <td className={styles.table_data}>React.js</td>
             <td className={styles.table_data}>HTML5</td>
@@ -84,11 +59,10 @@ const index = () => {
           <tr>
             <td className={styles.table_data}>React.js</td>
           </tr>
-   
       </tbody>
     </table>
-
       </div>
+      <hr></hr>
     </div>
   )
 }
