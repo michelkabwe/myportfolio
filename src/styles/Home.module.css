@@ -1,0 +1,75 @@
+.section, .section_techstack {
+    margin-left: 10rem;
+    margin-right: 25%;
+    padding-top: 10rem;
+
+  }
+
+  .section {
+      height: 900px;
+  }
+
+  .home_container {
+    /*height: 900px;*/
+  }
+
+  .home_title {
+    margin-top: 0px;
+
+  }
+
+   .purple_btn {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    background: #350BDE;
+    margin-top: 1rem;
+    color: #ffff;
+    border: none;
+    width: 207px;
+    height: 50px;
+  }
+
+  .purple_btn:hover {
+    cursor: pointer;
+    background: #000;
+    border: 0.5px solid black;
+    border-color: #ffffff;
+    transition: .5s;
+    width: 235px;
+  }
+
+  .section_techstack {
+    height: 900px;
+  }
+
+  .tech_stack_title {
+      font-family: 'Jost';
+      color: #ffffff;
+      text-transform: uppercase;
+  }
+
+  .table_row, .table_data {
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+    color: #C1BFCA;
+  }
+
+
+
+
+.social_btn_wrapper {
+    margin-top: 2rem;
+    margin-left: 10rem;
+   /* position: absolute;
+    bottom: 100px;*/
+ 
+  }
+
+  .Li_In__logo {
+    width: 3.5rem;
+    height: 3rem;
+  }
