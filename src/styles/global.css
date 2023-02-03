@@ -63,7 +63,15 @@ body {
   }
 
 
+/* break points */
 
+@media screen and (max-width: 900px){
+  #__next {
+    overflow-x: hidden;
+  }
+
+
+}
 
 
 

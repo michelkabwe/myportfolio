@@ -3,6 +3,13 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import LiInLogo from '../assets/LI-In-Bug.png'
 import GitHLogo from '../assets/github-mark.png'
+import { SlArrowDown } from "react-icons/Sl";
+import { FiBox } from "react-icons/fi";
+
+
+
+
+
 
 const index = () => {
   return (
@@ -16,9 +23,12 @@ const index = () => {
         <Image src={LiInLogo} alt="Linkedin Logo" className={styles.social_logos} />
         <Image src={GitHLogo} alt="Github Logo" className={styles.social_logos} />
       </div>
+      <div className={styles.arrow_wrapper}>
+      <SlArrowDown className={styles.arrow_down} size='2em'/>
+      </div >
       <hr></hr>
       <div className={styles.section_techstack}>
-        <h1>TECH STACK</h1>
+        <h1>TECH STACK <FiBox /> </h1>
         <p className={styles.tech_stack_title}>Programming languages / Framesworks / Libraries / CMS</p>
 
         <table>

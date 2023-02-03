@@ -20,6 +20,17 @@
     text-transform: uppercase;
 }
 
+/* break points  */
+
+@media screen and (max-width: 900px) {
+
+    .logo {
+        padding-left: 2rem;
+        font-size: 22px;
+        margin-left: 0;
+    }
+}
+
 
 
 

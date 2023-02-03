@@ -1,0 +1,17 @@
+.menu_icon {
+    color: #ffffff;
+}
+
+.menu_icon_wrapper {
+    display: none;
+ 
+}
+
+@media screen and (max-width: 900px){
+    .menu_icon_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+    }
+}

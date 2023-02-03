@@ -3,6 +3,7 @@ import styles from '../styles/Header.module.css'
 import NavBar from './NavBar'
 
 
+
 const header = () => {
     return (
         <header className={styles.header}>
