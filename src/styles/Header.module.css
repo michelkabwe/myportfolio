@@ -8,7 +8,7 @@
     width: 100%;
 }
 
-.logo {
+.logo  {
     color: #ffffff;
     font-family: Futura;
     font-style: normal;
@@ -20,13 +20,18 @@
     text-transform: uppercase;
 }
 
+.logo a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 /* break points  */
 
 @media screen and (max-width: 900px) {
 
-    .logo {
+    .logo  {
         padding-left: 2rem;
-        font-size: 22px;
+        font-size: 19px;
         margin-left: 0;
     }
 }

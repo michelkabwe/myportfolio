@@ -5,19 +5,25 @@ import LiInLogo from '../assets/LI-In-Bug.png'
 import GitHLogo from '../assets/github-mark.png'
 import { SlArrowDown } from "react-icons/Sl";
 import { FiBox } from "react-icons/fi";
-
-
-
+import Router from 'next/router';
 
 
 
 const index = () => {
+  const handleClick = () => {
+    Router.push('/portfolio');
+  };
+
+
   return (
     <div className={styles.home_container}>
       <div className={styles.section}>
         <h1 className={styles.home_title}>HI, I AM A FREELANCE JUNIOR FRONTEND DEVELOPER, UX DESIGNER</h1>
         <p>with +3 years of experience as an IT-consultant among some of Sweden’s most renowned companies. Service-minded and self-driven. I am seeking to advance my career by growing with your company and contributing with my skills as a developer and my never say die attitude".</p>
-        <button className={styles.purple_btn}>MY PORTFOLIO</button>
+        
+        <button className={styles.purple_btn} onClick={handleClick}
+        >MY PORTFOLIO</button>
+        
       </div>
       <div className={styles.social_btn_wrapper}>
         <Image src={LiInLogo} alt="Linkedin Logo" className={styles.social_logos} />
