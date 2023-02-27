@@ -1,117 +1,173 @@
+.home_container {
+  padding-top: 6rem;
+  overflow-anchor: none;
+
+}
+
+
 .section, .section_techstack {
-    margin-left: 10rem;
-    margin-right: 25%;
-    padding-top: 10rem;
+  margin-left: 10rem;
+  margin-right: 25%;
+  padding-top: 10rem;
+
+}
+
+.section {
+  height: 900px;
+}
+
+
+.home_title {
+  margin-top: 0px;
+
+}
+
+.purple_btn {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  background: #350BDE;
+  margin-top: 1rem;
+  color: #ffff;
+  border: none;
+  width: 207px;
+  height: 50px;
+}
+
+.btn_wrapper_hero {
+  display: flex;
+  flex-direction: row;
+}
+
+.social_btn_wrapper_hero {
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+
+}
+
+.social_logos_hero {
+  width: 51px;
+  height: 48px;
+  padding-left: 10px;
+  padding-right: -4px;
+}
+
+.purple_btn:hover {
+  cursor: pointer;
+  background: #000;
+  border: 0.5px solid black;
+  border-color: #ffffff;
+  transition: .5s;
+  width: 235px;
+}
+
+.section_techstack {
+  height: 900px;
+}
+
+.social_btn_wrapper {
+  margin-left: 2rem;
+  margin-right: 10rem;
+
+}
+
+.social_logos {
+  width: 37px;
+  height: 32px;
+  padding-right: 10px;
+}
+
+.social_logos:hover {
+  cursor: pointer;
+}
+
+.tech_stack_title {
+  font-family: 'Jost';
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.table_row, .table_data {
+  padding-right: 5rem;
+  padding-bottom: 2rem;
+  color: #C1BFCA;
+}
+
+.table_data:hover {
+  color: #ffffff
+}
+
+
+.btn_down_wrapper {
+  width: 100%;
+  display: flex;
+  height: 609px;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+
+.btn_down {
+  color: #c2bfca;
+}
+
+
+
+
+
+
+/* break points */
+
+@media screen and (max-width: 900px) {
+
+  .section, .section_techstack {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-top: 0;
 
   }
 
   .section {
-      height: 900px;
+    margin-top: -11rem;
   }
 
-  .home_container {
-    padding-top: 6rem;
+  .social_btn_wrapper {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    text-align: center;
+    position: static;
+
   }
 
-  .home_title {
-    margin-top: 0px;
-
+  .table_data {
+    padding-right: 64px;
   }
 
-   .purple_btn {
+  .p_home {
+    margin-top: 0rem;
+  }
+
+  .purple_btn {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 23px;
     text-align: center;
     background: #350BDE;
     margin-top: 1rem;
     color: #ffff;
     border: none;
-    width: 207px;
+    width: 156px;
     height: 50px;
   }
-
-  .purple_btn:hover {
-    cursor: pointer;
-    background: #000;
-    border: 0.5px solid black;
-    border-color: #ffffff;
-    transition: .5s;
-    width: 235px;
-  }
-
-  .section_techstack {
-    height: 900px;
-  }
-
-  .tech_stack_title {
-      font-family: 'Jost';
-      color: #ffffff;
-      text-transform: uppercase;
-  }
-
-  .table_row, .table_data {
-    padding-right: 5rem;
-    padding-bottom: 2rem;
-    color: #C1BFCA;
-  }
-
-
-.social_btn_wrapper {
-    margin-left: 2rem;
-    margin-right:10rem;
-    position: absolute;
-    top:45rem;
- 
-  }
-
-  .social_logos {
-    width: 37px;
-    height: 32px;
-    padding-right: 10px;
-  }
-  .social_logos:hover {
-    cursor: pointer;
-  }
-
-  .arrow_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .arrow_down {
-      color:#C1BFCA;
-  }
-
-  /* break points */
-
-  @media screen and (max-width: 900px){
-      
-      .section, .section_techstack {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        flex-direction: column;
-        padding: 2rem 2rem;
-        margin-left: 0rem;
-        margin-right: 0rem;
-        padding-top: 0;
-        
-      }
-
-      .social_btn_wrapper {
-        margin-left: 0rem;
-        margin-right: 0rem;
-        text-align: center;
-        position: static;
-
-      }
-
-      .table_data {
-        padding-right: 64px;
-      }
-  }
-
+}

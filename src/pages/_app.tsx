@@ -1,14 +1,18 @@
-import React from 'react'
+import { useState, useEffect } from 'react';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import Layout from '../components/Layout'
 import '../styles/global.css'
 
 const _app = ({ Component }) => {
+
     return (
         <div className="App">
             <Layout>
-                <Component />
+                <ParallaxProvider>
+                    <Component />
+                </ParallaxProvider>
             </Layout>
-            
+
         </div>
     )
 }

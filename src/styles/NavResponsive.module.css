@@ -49,10 +49,11 @@
       }
 
       .mobile_nav_ul {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          margin-top: 6rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 6rem;
 
       }
 
