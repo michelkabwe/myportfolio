@@ -33,7 +33,7 @@ const NavResponsive: React.FC<Props> = ({ isOpen, setIsOpen }) => {
             <BiMenuAltRight className={styles.menu_icon} size='2em'
                 onClick={() => setIsOpen(!isOpen)}
             />
-            {isOpen ? <div className={styles.nav_drop_down}>
+      <div className={`${styles.nav_drop_down} ${isOpen ? styles.open : ''}`}>
                 <div className={styles.close_btn}>
 
                     <div className={styles.social_btn_wrapper}>
@@ -58,7 +58,7 @@ const NavResponsive: React.FC<Props> = ({ isOpen, setIsOpen }) => {
                 </div>
 
 
-            </div> : ''}
+            </div> 
         </div>
     )
 }

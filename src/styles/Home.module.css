@@ -12,13 +12,13 @@
 
 }
 
-.section {
-  height: 900px;
+.section, .section_techstack {
+  height: 100vh
 }
 
 
 .home_title {
-  margin-top: 0px;
+  font-size: 3.25rem;
 
 }
 
@@ -51,7 +51,7 @@
 
 .social_logos_hero {
   width: 51px;
-  height: 48px;
+  height: auto;
   padding-left: 10px;
   padding-right: -4px;
 }
@@ -66,7 +66,7 @@
 }
 
 .section_techstack {
-  height: 900px;
+  background: #f3f3f3;
 }
 
 .social_btn_wrapper {
@@ -85,20 +85,26 @@
   cursor: pointer;
 }
 
+.tech_stack_heading {
+  color:#000000
+}
+
 .tech_stack_title {
   font-family: 'Jost';
-  color: #ffffff;
+  color: #000000;
   text-transform: uppercase;
 }
 
 .table_row, .table_data {
   padding-right: 5rem;
   padding-bottom: 2rem;
-  color: #C1BFCA;
+  color:#000000;
+  /*color: #C1BFCA;*/
 }
 
 .table_data:hover {
-  color: #ffffff
+  color:#350BDE;
+  /*color: #ffffff*/
 }
 
 
@@ -133,19 +139,25 @@
     margin-left: 0rem;
     margin-right: 0rem;
     padding-top: 0;
+    height: auto;
 
   }
 
-  .section {
-    margin-top: -11rem;
+
+  .home_container {
+    padding-top: 0rem;
   }
 
-  .social_btn_wrapper {
-    margin-left: 0rem;
-    margin-right: 0rem;
+  .social_btn_wrapper_hero {
+
     text-align: center;
     position: static;
+    width: 100%;
 
+  }
+
+  .btn_down_wrapper {
+    height: 0px;
   }
 
   .table_data {
@@ -153,6 +165,7 @@
   }
 
   .p_home {
+    font-size: 1rem;
     margin-top: 0rem;
   }
 
@@ -164,10 +177,32 @@
     line-height: 23px;
     text-align: center;
     background: #350BDE;
+    border-radius: 13px;
     margin-top: 1rem;
     color: #ffff;
     border: none;
-    width: 156px;
+    width: 213px;
     height: 50px;
+    margin-bottom: 3rem;
+
   }
+
+  .home_title {
+    font-size: 1.75rem;
+
+  }
+
+  .btn_wrapper_hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .social_btn_wrapper_hero {
+    margin-top: 3rem;
+
+  }
+
 }

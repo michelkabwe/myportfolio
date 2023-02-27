@@ -22,3 +22,20 @@
   .social_logos:hover {
     cursor: pointer;
   }
+
+  /* break points  */
+
+@media screen and (max-width: 900px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social_btn_wrapper {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+}

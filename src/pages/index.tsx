@@ -75,9 +75,8 @@ const index: React.FC<Props> = () => {
 
 
       </div>
-      <hr></hr>
       <div className={styles.section_techstack} id="section-2" >
-        <h1>TECH STACK <FiBox /> </h1>
+        <h1 className={styles.tech_stack_heading}>TECH STACK <FiBox /> </h1>
         <p className={styles.tech_stack_title}>Programming languages / Framesworks / Libraries / CMS</p>
 
         <table>
@@ -121,7 +120,6 @@ const index: React.FC<Props> = () => {
           </tbody>
         </table>
       </div>
-      <hr></hr>
     </div>
   )
 }

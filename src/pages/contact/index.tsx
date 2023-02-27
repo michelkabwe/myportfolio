@@ -1,12 +1,12 @@
 import React from 'react'
 
-function first() {
+const Contact = () => {
     return (
         <div>
-            <h1>contact first</h1>
+            <h1>Contact Page</h1>
             
         </div>
     )
 }
 
-export default first
+export default Contact
