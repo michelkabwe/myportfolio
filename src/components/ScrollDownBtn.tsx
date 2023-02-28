@@ -1,18 +1,15 @@
-import { VscFoldDown } from 'react-icons/vsc';
+import { VscFoldDown } from "react-icons/vsc";
 
 type ScrollButtonProps = {
-    onClick: () => void;
-  };
+  onClick: () => void;
+};
 
 const ScrollDownBtn: React.FC<ScrollButtonProps> = ({ onClick }) => {
-
-    return (
-
+  return (
     <div className="scroll-to-top-button">
-        <VscFoldDown onClick={onClick} style={{ color: '#c2bfca',    }} size="52" />
-            
-        </div>
-    )
-}
+      <VscFoldDown onClick={onClick} style={{ color: "#c2bfca" }} size="52" />
+    </div>
+  );
+};
 
-export default ScrollDownBtn
+export default ScrollDownBtn;

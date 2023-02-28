@@ -1,17 +1,15 @@
 .nav_wrapper {
-
 }
 
 /* break point */
 
-@media screen and (max-width: 900px){
-    .nav_ul {
-        display:none
-    }
+@media screen and (max-width: 900px) {
+  .nav_ul {
+    display: none;
+  }
 
-    .nav_wrapper {
-        padding-right: 2rem;
-        margin-right: 0;
-
-    }
+  .nav_wrapper {
+    padding-right: 2rem;
+    margin-right: 0;
+  }
 }
