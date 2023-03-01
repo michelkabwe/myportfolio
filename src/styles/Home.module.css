@@ -59,9 +59,11 @@
 }
 
 .social_btn_wrapper_hero {
+  display: none;
+/*
   display: flex;
   justify-content: center;
-  align-items: self-end;
+  align-items: self-end;*/
 }
 
 .social_logos_hero {
@@ -142,7 +144,7 @@
   right: 0;
   bottom: 0;
   z-index: 0;
-  width: 37%;
+  width: 46%;
   height: auto;
   filter: grayscale(100%) brightness(138%) contrast(122%);
 }
@@ -172,9 +174,9 @@
   }
 
   .social_btn_wrapper_hero {
-    text-align: center;
+    /*text-align: center;
     position: static;
-    width: 100%;
+    width: 100%;*/
   }
 
   .btn_down_wrapper {
@@ -219,9 +221,7 @@
     width: 100%;
   }
 
-  .social_btn_wrapper_hero {
-    margin-top: 3rem;
-  }
+
 }
 
 @media screen and (max-width: 1128px) {
