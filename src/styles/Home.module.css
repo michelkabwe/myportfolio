@@ -1,5 +1,5 @@
 .home_container {
-  padding-top: 6rem;
+  padding-top: 100px;
   overflow-anchor: none;
 }
 
@@ -28,15 +28,11 @@
 }
 
 .home_title {
-  position: relative;
-  z-index: 1;
+  /*position: relative;
+  z-index: 1;*/
   font-size: 3.25rem;
 }
 
-.p_home {
-  position: relative;
-  z-index: 1;
-}
 
 .purple_btn {
   font-family: "Jost";
@@ -166,7 +162,7 @@
   }
 
   .home_container {
-    padding-top: 0rem;
+    padding-top: 100px;
   }
 
   .col_img {

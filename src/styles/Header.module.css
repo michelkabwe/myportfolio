@@ -35,6 +35,6 @@
   }
 
   .header {
-    position: relative;
+    position: fixed;
   }
 }
