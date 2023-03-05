@@ -18,6 +18,9 @@ interface Props {
 const index: React.FC<Props> = () => {
 
   const [showBtn, setShowBtn] = useState(false)
+  const [slideEffect, setSlideEffect] = useState(false);
+
+
 
   const handleScroll = () => {
     if (window.scrollY >= 80) {
@@ -42,12 +45,23 @@ const index: React.FC<Props> = () => {
     });
   };
 
-
-
   const handleClick = () => {
     Router.push('/portfolio');
   };
 
+
+  const handleScrollTwo = () => {
+    if(window.scrollY >= 481){
+      console.log(true)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScrollTwo);
+    return () => {
+      window.removeEventListener('scroll', handleScrollTwo);
+    };
+  }, []);
 
   return (
     <div className={styles.home_container}>
@@ -56,8 +70,8 @@ const index: React.FC<Props> = () => {
       <Image src={Mee} className={styles.me} alt="me" />
       </div>
       <div className={styles.col_text}>
-        <h1 className={styles.home_title}>HI, I AM A FREELANCE JUNIOR FRONTEND DEVELOPER, UX DESIGNER</h1>
-        <p className={styles.p_home}>with +3 years of experience as an IT-consultant among some of Sweden’s most renowned companies. Service-minded and self-driven. I am seeking to advance my career by growing with your company and contributing with my skills as a developer and my never say die attitude".</p>
+      <h1 className={`${styles.home_title} ${styles.slideInLeft}`}>HI, I AM A FREELANCE JUNIOR FRONTEND DEVELOPER, UX DESIGNER</h1>
+      <p className={`${styles.p_home} ${styles.slideInLeft}`}>with +3 years of experience as an IT-consultant among some of Sweden’s most renowned companies. Service-minded and self-driven. I am seeking to advance my career by growing with your company and contributing with my skills as a developer and my never say die attitude".</p>
         <div className={styles.btn_wrapper_hero}>
           <button className={styles.purple_btn} onClick={handleClick}
           >MY PORTFOLIO</button>
@@ -82,7 +96,7 @@ const index: React.FC<Props> = () => {
 
       </div>
       <div className={styles.section_techstack} id="section-2" >
-        <h1 className={styles.tech_stack_heading}>TECH STACK <FiBox /> </h1>
+        <h1 className={`${styles.tech_stack_heading} ${slideEffect ? '' : ''}`}>TECH STACK <FiBox /> </h1>
         <p className={styles.tech_stack_title}>Programming languages / Framesworks / Libraries / CMS</p>
 
         <table>

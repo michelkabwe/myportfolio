@@ -145,6 +145,24 @@
   filter: grayscale(100%) brightness(138%) contrast(122%);
 }
 
+.home_title, .p_home, .tech_stack_heading, .tech_stack_title {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideIn 0.5s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* break points */
 
 @media screen and (max-width: 900px) {
@@ -218,8 +236,16 @@
   }
 
 
+
+
 }
 
+@media screen and (max-width: 900px) {
+  .table_data {
+    padding-right: 1rem;
+  }
+
+}
 @media screen and (max-width: 1128px) {
   .col_img {
     display:none;
